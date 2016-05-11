@@ -36,11 +36,11 @@ In a standard puppet environment where you just want to copy the CRL to the stan
 All the parameters are configurable, so to customise you'd do something like :
 
     class { '::puppetcrl_sync':
-        crl_location => '/tmp/testing'
-        crl_target   => '/home/matt'
-        crl_owner    => 'matt'
-        crl_group    => 'matt'
-        crl_mode     => '0755'
+        location => '/tmp/testing'
+        target   => '/home/matt'
+        owner    => 'matt'
+        group    => 'matt'
+        mode     => '0755'
     }
 
 ## Limitations
